@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Be Vietnam Pro', 'Noto Sans JP', sans-serif;
+    background-color: #FCF8FA; /* Color de fondo inspirado en el cerezo en flor */
+    color: #1a202c; /* Color de texto oscuro */
+}
+
+.main .block-container {
+    max-width: 1200px; /* Adjust this value for desired width */
+    padding-left: 5rem; /* Set left padding */
+    padding-right: 5rem; /* Set right padding */
+    margin: 0 auto; /* This centers the container if it's not at max width */
+}
+
+.stMainBlockContainer {
+    max-width: 80vw;
+}
+
+.stApp {
+    background-color: #FCF8FA; /* Asegura que el fondo de la app completa sea el correcto */
+}
+
+/* Estilo para el título principal */
+.stApp h1 {
+    color: #4A2E3D; /* Color azul índigo para el título */
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    letter-spacing: -0.05em;
+}
+
+/* Estilo para los subtítulos */
+.stApp h2 {
+    color: #4A2E3D;
+    font-weight: 600;
+}
+
+/* Estilo para el área de texto */
+.stTextArea label {
+    font-weight: 600;
+    color: #4A5568;
+}
+
+.stTextArea textarea {
+    background-color: #FEFBFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 15px;
+    color: #1a202c;
+}
+
+.stTextArea textarea::placeholder {
+    color: #A0AEC0 !important; /* A light grey color that will be visible on your light background */
+    opacity: 1; /* Ensures visibility across browsers */
+}
+
+/* Estilo para los botones */
+.stButton button {
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+/* Botón "Analizar con Traducciones" (con color cálido) */
+.stButton button:first-of-type {
+    background-color: #F6E05E; /* Dorado suave */
+    color: #4A5568;
+    border: none;
+}
+.stButton button:first-of-type:hover {
+    background-color: #ED8936; /* Naranja para el hover */
+    color: white;
+}
+
+/* Botón "Analizar sin Traducciones" (neutro) */
+.stButton button:last-of-type {
+    background-color: #CBD5E0; /* Gris neutro */
+    color: #4A5568;
+    border: none;
+}
+.stButton button:last-of-type:hover {
+    background-color: #A0AEC0;
+}
+
+/* Estilo para la tabla de resultados (dataframe) */
+.stDataFrame {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E2E8F0;
+}
+
+/* Estilo para las Metricas */
+div[data-testid="stMetric"] {
+    padding: 16px;
+    background-color: #FFFEFE;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Cambia el color del texto del label */
+[data-testid="stMetricLabel"] [data-testid="stMarkdownContainer"] p {
+    color: #718096;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Cambia el color del texto del value */
+[data-testid="stMetricValue"] {
+    color: #1e293b;
+    font-weight: bold;
+}
